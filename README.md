@@ -12,4 +12,6 @@ cd cit/clockingit-master
 ./install.ubuntu.12.04.sh
 ```
 
+It will ask you to set a mysql root password. Remember it because you will need it later in the process.
+
 Enjoy,
