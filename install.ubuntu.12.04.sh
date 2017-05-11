@@ -46,6 +46,7 @@ echo "Moving cit directory to /opt/cit..."
 cd $SCRIPT_DIR
 mv cit /opt/.
 cd /opt/cit
+mkdir log
 
 echo "Setup ruby app..."
 ruby setup.rb
