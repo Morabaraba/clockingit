@@ -8,7 +8,7 @@ A simple fork from ClockingIT to install on Ubuntu 12.04.
 ```sh
 curl https://codeload.github.com/joubertredrat/clockingit/zip/master -o cit.zip
 unzip cit.zip
-cd cit/cit-master
+cd cit/clockingit-master
 ./install.ubuntu.12.04.sh
 ```
 
