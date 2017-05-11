@@ -17,7 +17,7 @@ apt-get install mysql-server mysql-client libmysqlclient-dev \
 graphicsmagick-libmagick-dev-compat imagemagick ruby1.8 ruby1.8-dev rubygems ri rdoc rake librmagick-ruby \
 apache2 -y
 
-echo "Create cit database..."
+echo "Create cit database, mysql root password needed..."
 echo "CREATE DATABASE cit DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; GRANT ALL ON cit.* TO 'cit'@'localhost' IDENTIFIED BY 'cit'; FLUSH PRIVILEGES;" | mysql -u root -p
 
 echo "Install needed ruby gems..."
@@ -30,6 +30,8 @@ echo "Moving cit directory to /opt/cit..."
 cd $SCRIPT_DIR
 mv cit /opt/.
 cd /opt/cit
+echo "Create log directory..."
+mkdir -p log
 
 echo "Setup ruby app..."
 ruby setup.rb
