@@ -17,7 +17,7 @@ apt-get install mysql-server mysql-client libmysqlclient-dev \
 graphicsmagick-libmagick-dev-compat imagemagick ruby1.8 ruby1.8-dev rubygems ri rdoc rake librmagick-ruby \
 apache2 -y
 
-echo "Apache ServerName(eg, *.clockingit.com):
+echo "Apache ServerName(eg, *.clockingit.com):"
 read $SERVERNAME
 echo "Create cit database, mysql root password needed..."
 echo "CREATE DATABASE cit DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; GRANT ALL ON cit.* TO 'cit'@'localhost' IDENTIFIED BY 'cit'; FLUSH PRIVILEGES;" | mysql -u root -p
@@ -83,5 +83,6 @@ echo "Change permission(+x)..."
 chmod +x /etc/init.d/cit
 echo "Update init.d script..."
 sed -i 's/CHANGE_CIT_PATH/\/opt\/cit/g' -i /etc/init.d/cit
+ruby setup.rb
 echo "Done! See /opt/cit/config/environment.rb-example and /opt/cit/config/database.yml-example to setup your env."
-echo "Start ClockingIT with /etc/init.d/cit start"
+#echo "Start ClockingIT with /etc/init.d/cit start"
