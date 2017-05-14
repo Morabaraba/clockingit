@@ -1,4 +1,4 @@
-ClockingIT v0.99.3: TimeTracking 2.0
+ClockingIT v0.99.4: TimeTracking 2.0
 ====================================
 #### MIT/X11 license
 
@@ -7,7 +7,7 @@ A simple fork of ClockingIT to install on Ubuntu 12.04 LTS.
 ```sh
 curl https://codeload.github.com/ludoza/clockingit/zip/master -o cit.zip
 unzip cit.zip
-cd cit/clockingit-master
+cd clockingit-master
 ./install.ubuntu.12.04.sh
 ```
 
