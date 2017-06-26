@@ -27,18 +27,16 @@ gem install json -v 1.8.6 -r
 gem install json_pure -v 2.0.1 -r
 gem install rdoc -v 4.2.2 -r
 gem install rake -v 10.4.2 -r
-gem install gchartrb RedCloth tzinfo echoe fastercsv test-spec ferret hoe mongrel eventmachine -r
-# To lazy now but we will need this in the future:
-# gchartrb-0.8
-# RedCloth-4.3.2
-# tzinfo-1.2.3
-# echoe-4.6.6
-# fastercsv-1.5.5
-# test-spec-0.10.0
-# ferret-0.11.8.7
-# hoe-3.16.0
-# mongrel-1.1.5
-# eventmachine-1.2.3
+gem install gchartrb -v 0.8 -r
+gem install RedCloth -v 4.3.2 -r
+gem install tzinfo v- 1.2.3 -r
+gem install echoe -v 4.6.6 -r
+gem install fastercsv -v 1.5.5 -r
+gem install test-spec -v 0.10.0 -r
+gem install ferret -v0.11.8.7 -r
+gem install hoe -v 3.16.0 -r
+gem install mongrel -v 1.1.5 -r
+gem install eventmachine -v 1.2.3 -r
 gem install ZenTest -v 4.1.4 -r
 gem install icalendar -v 1.1.0 -r
 gem install mysql -v 2.7 -r
@@ -49,9 +47,6 @@ cd $SCRIPT_DIR
 mv cit /opt/.
 cd /opt/cit
 mkdir log
-
-echo "Setup ruby app..."
-ruby setup.rb
 
 echo "Change permission(777)..."
 chmod 777 /opt/cit -Rf
@@ -83,6 +78,9 @@ echo "Change permission(+x)..."
 chmod +x /etc/init.d/cit
 echo "Update init.d script..."
 sed -i 's/CHANGE_CIT_PATH/\/opt\/cit/g' -i /etc/init.d/cit
+
+echo "Setup ruby app..."
 ruby setup.rb
+
 echo "Done! See /opt/cit/config/environment.rb-example and /opt/cit/config/database.yml-example to setup your env."
 #echo "Start ClockingIT with /etc/init.d/cit start"
