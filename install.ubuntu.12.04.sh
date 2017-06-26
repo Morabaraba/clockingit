@@ -29,11 +29,11 @@ gem install rdoc -v 4.2.2 -r
 gem install rake -v 10.4.2 -r
 gem install gchartrb -v 0.8 -r
 gem install RedCloth -v 4.3.2 -r
-gem install tzinfo v- 1.2.3 -r
+gem install tzinfo -v 1.2.3 -r
 gem install echoe -v 4.6.6 -r
 gem install fastercsv -v 1.5.5 -r
 gem install test-spec -v 0.10.0 -r
-gem install ferret -v0.11.8.7 -r
+gem install ferret -v 0.11.8.7 -r
 gem install hoe -v 3.16.0 -r
 gem install mongrel -v 1.1.5 -r
 gem install eventmachine -v 1.2.3 -r
