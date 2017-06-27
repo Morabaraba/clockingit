@@ -29,7 +29,7 @@ gem install rdoc -v 4.2.2 -r
 gem install rake -v 10.4.2 -r
 gem install gchartrb -v 0.8 -r
 gem install RedCloth -v 4.3.2 -r
-gem install tzinfo -v 1.2.3 -r
+gem install tzinfo -v 0.3.11 -r
 gem install echoe -v 4.6.6 -r
 gem install fastercsv -v 1.5.5 -r
 gem install test-spec -v 0.10.0 -r
